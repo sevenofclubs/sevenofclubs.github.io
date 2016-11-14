@@ -1,0 +1,162 @@
+/* Universal */
+
+body {
+    background-color: black;
+    color: white;
+}
+
+/* Typography */
+
+html, body {
+    font-size: 18px;
+}
+
+body, h1, h2, h3, h4, h5, h6, p {
+    font-family: "Montserrat", "Open Sans", Helvetica, sans-serif;
+}
+
+body {
+    text-align: center;
+}
+
+
+h1 {
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.333rem;
+    margin-bottom: 3rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+h4 {
+    font-size: 1rem;
+    line-height: 2rem;
+    font-weight: normal;
+}
+
+h6 {
+    font-size: 0.777rem;
+    font-weight: normal;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+/* Landing page */
+
+.sofc-menu {
+    height: 80px;
+}
+
+.sofc-landing-image {
+    max-height: 400px;
+    align-content: center;
+}
+
+.sofc-landing-text {
+    text-align: center;
+    max-width: 620px;
+    margin-bottom: 4rem;
+}
+
+.sofc-prev-sign {
+    float: right;
+    text-align: right;
+}
+
+.sofc-next-sign {
+    float: left;
+    text-align: left;
+}
+
+.sofc-sign {
+    margin-bottom: 3rem;
+}
+
+/* Images */
+
+.chalk {
+    height: 50px;
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+
+.the-icons {
+    line-height: 1rem;
+    margin-bottom: 2rem;
+}
+
+a {
+    color: white;
+}
+
+/*Social Media Font*/
+
+@font-face {
+      font-family: 'fontello';
+      src: url('../font/fontello.eot?88240421');
+      src: url('../font/fontello.eot?88240421#iefix') format('embedded-opentype'),
+           url('../font/fontello.svg?88240421#fontello') format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
+     
+     
+    .demo-icon
+    {
+      font-family: "fontello";
+      font-style: normal;
+      font-weight: normal;
+      speak: none;
+     
+      display: inline-block;
+      text-decoration: inherit;
+      width: 1em;
+      margin-right: .2em;
+      text-align: center;
+      /* opacity: .8; */
+     
+      /* For safety - reset parent styles, that can break glyph codes*/
+      font-variant: normal;
+      text-transform: none;
+     
+      /* fix buttons height, for twitter bootstrap */
+      line-height: 1em;
+     
+      /* Animation center compensation - margins should be symmetric */
+      /* remove if not needed */
+      margin-left: .2em;
+     
+      /* You can be more comfortable with increased icons size */
+      font-size: 1.333rem;      
+
+      /* Font smoothing. That was taken from TWBS */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+     
+      /* Uncomment for 3D effect */
+      /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+    }
+
+
+.white {
+    background-color: white;
+    color: black;
+}
+
+.white-font {
+    color: black;
+}
+
+
