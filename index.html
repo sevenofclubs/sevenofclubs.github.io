@@ -17,20 +17,16 @@
         
         <!-- Main.css -->
         <link rel="stylesheet" href="main.css">
-    
-    <?php
-        $i = rand(0, 1);
-    ?>   
 
     </head>
     
-    <body class = <?php if ($i == 0) echo "white"; ?> >
+    <body onload="return white_color()" id = "white">
 
         <div class="sofc-menu">
         </div> 
         
         <div>
-            <img class="sofc-landing-image" src=<?php if ($i == 0) echo "images/Logo_square(bONw).jpg"; else echo "images/Logo_square(wONb).jpg"?>>
+            <img class="sofc-landing-image" id="logo" src="images/Logo_square(wONb).jpg"> 
         </div>      
         
         <div class = "row sofc-landing-text">
@@ -44,13 +40,13 @@
         <div class="row sofc-sign">
             <div class="small-6 medium-6 large-6 columns">
                 <div class = "sofc-prev-sign">
-                    <img class="chalk" src=<?php if ($i == 0) echo "images/Button-prev-w.jpg"; else echo "images/Button-prev-01.jpg"?> >
+                    <img class="chalk" id="prev" src="images/Button-prev-01.jpg">
                     <h4>13 September, <br> 2016.</h4>
                 </div>
             </div>  
             <div class="small-6 medium-6 large-6 columns">
                 <div class = "sofc-next-sign">
-                    <img class="chalk" src=<?php if ($i == 0) echo "images/Button-next_w.jpg"; else echo "images/Button-next.jpg"?>>
+                    <img class="chalk" id="next" src="images/Button-next.jpg"?>
                     <h4>13 December, <br> 2016.</h4>
                 </div>
             </div>
@@ -60,12 +56,30 @@
         <div class="row footer">
             <p class="the-icons">
  <!--               <i> <a  class="demo-icon <?php if ($i == 0) echo white; ?>" href = "https://www.facebook.com/mikeo.designer?fref=ts">&#xe800;</a></i>-->
-                <i> <a class="demo-icon <?php if ($i == 0) echo white; ?>" href = "https://www.facebook.com/groups/558311574326261/">&#xe801;</a></i>
-                <i> <a class="demo-icon <?php if ($i == 0) echo white; ?>" href = "mailto:ivan.isakov@gmail.com">&#xe802;</a></i>
+                <i> <a class="demo-icon" id="white-font-fb" href = "https://www.facebook.com/groups/558311574326261/">&#xe801;</a></i>
+                <i> <a class="demo-icon" id="white-font-mail" href = "mailto:ivan.isakov@gmail.com">&#xe802;</a></i>
             </p>
             <h6>7 of Clubs, 2016 © All rights reserved</h6>
-        </div>
-             
+        </div>   
+    
+    <script>
         
+        function white_color() {
+                var rand = Math.floor((Math.random() * 2));
+
+                if (rand == 1) {
+                    document.getElementById('white').style.background = "white";
+                    document.getElementById('white').style.color = "black";
+                    document.getElementById('white-font-fb').style.color = "black";
+                    document.getElementById('white-font-mail').style.color = "black";
+                    document.getElementById('logo').src = "images/Logo_square(bONw).jpg";
+                    document.getElementById('prev').src = "images/Button-prev-w.jpg";
+                    document.getElementById('next').src = "images/Button-next_w.jpg"
+                }
+            };
+
+    </script>
+
+
   </body>
 </html>
