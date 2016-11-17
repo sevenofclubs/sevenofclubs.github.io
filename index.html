@@ -26,7 +26,7 @@
         </div> 
         
         <div>
-            <img class="sofc-landing-image" id="logo" src="images/Logo_square(wONb).jpg"> 
+            <img class="sofc-landing-image" id="logo"> 
         </div>      
         
         <div class = "row sofc-landing-text">
@@ -40,13 +40,13 @@
         <div class="row sofc-sign">
             <div class="small-6 medium-6 large-6 columns">
                 <div class = "sofc-prev-sign">
-                    <img class="chalk" id="prev" src="images/Button-prev-01.jpg">
+                    <img class="chalk" id="prev">
                     <h4>13 September, <br> 2016.</h4>
                 </div>
             </div>  
             <div class="small-6 medium-6 large-6 columns">
                 <div class = "sofc-next-sign">
-                    <img class="chalk" id="next" src="images/Button-next.jpg"?>
+                    <img class="chalk" id="next">
                     <h4>13 December, <br> 2016.</h4>
                 </div>
             </div>
@@ -75,6 +75,12 @@
                     document.getElementById('logo').src = "images/Logo_square(bONw).jpg";
                     document.getElementById('prev').src = "images/Button-prev-w.jpg";
                     document.getElementById('next').src = "images/Button-next_w.jpg"
+                }
+
+                else {
+                    document.getElementById('logo').src = "images/Logo_square(wONb).jpg";
+                    document.getElementById('prev').src = "images/Button-prev-01.jpg";
+                    document.getElementById('next').src = "images/Button-next.jpg"
                 }
             };
 
