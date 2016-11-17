@@ -101,6 +101,10 @@ a {
     color: white;
 }
 
+a:hover {
+  color: grey;
+}
+
 /*Social Media Font*/
 
 @font-face {
